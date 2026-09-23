@@ -1,0 +1,111 @@
+{
+  "description": "Optimized parameters for the A123 ANR26650M1B DFN model. Apply with parameter_values.update() in step5_validate.py; function-type parameters (exchange-current densities, electrolyte conductivity, positive electrode OCP) are updated with a small wrapper function, since PyBaMM represents them as functions rather than single numbers - this is the one necessary exception to a plain .update() call.",
+  "fixed_from_step3": {
+    "target_capacity_Ah": 2.5,
+    "neg_diffusivity_baseline_m2_s": 2.5e-14,
+    "stoich_window": {
+      "x_0": 0.001456387679185872,
+      "x_100": 0.7760030630966726,
+      "y_0": 0.9471267393538139,
+      "y_100": 0.02313205526179643
+    },
+    "voltage_cutoffs_V": [
+      2.0,
+      3.8
+    ],
+    "eps_n": 0.5924991563758243,
+    "eps_p": 0.282805568101354
+  },
+  "optimized": {
+    "k_n": {
+      "parameter": "Negative electrode exchange-current density [A.m-2]",
+      "multiplier": 1.0457584939540752,
+      "is_function": true
+    },
+    "k_p": {
+      "parameter": "Positive electrode exchange-current density [A.m-2]",
+      "multiplier": 1.0,
+      "is_function": true
+    },
+    "D_n": {
+      "parameter": "Negative particle diffusivity [m2.s-1]",
+      "multiplier": 6.8119287365856165,
+      "is_function": false,
+      "absolute_value": 1.702982184146404e-13
+    },
+    "D_p": {
+      "parameter": "Positive particle diffusivity [m2.s-1]",
+      "multiplier": 0.5221582739289,
+      "is_function": false,
+      "absolute_value": 3.08073381618051e-18
+    },
+    "sig_n": {
+      "parameter": "Negative electrode conductivity [S.m-1]",
+      "multiplier": 1.0,
+      "is_function": false,
+      "absolute_value": 215.0
+    },
+    "sig_p": {
+      "parameter": "Positive electrode conductivity [S.m-1]",
+      "multiplier": 1.0,
+      "is_function": false,
+      "absolute_value": 0.33795074
+    },
+    "kappa_e": {
+      "parameter": "Electrolyte conductivity [S.m-1]",
+      "multiplier": 1.0,
+      "is_function": true
+    },
+    "D_e": {
+      "parameter": "Electrolyte diffusivity [m2.s-1]",
+      "multiplier": 2.3303246093030388,
+      "is_function": false,
+      "absolute_value": 4.660649218606078e-10
+    },
+    "R_contact_ohm": 0.0021870301612935644,
+    "ocv_correction_mV": {
+      "ocv_c0": 43.218284462211,
+      "ocv_c1": -149.81928496716625,
+      "ocv_c2": 65.36684841631882,
+      "ocv_end_lo": 149.44494609889142,
+      "ocv_end_hi": -79.61265637014495
+    }
+  },
+  "frozen_not_identified": [
+    "k_p",
+    "sig_n",
+    "sig_p",
+    "kappa_e"
+  ],
+  "at_bounds_treat_with_caution": [
+    "ocv_c1",
+    "ocv_end_lo"
+  ],
+  "sensitivity": {
+    "k_n": 0.01887153503801963,
+    "k_p": 0.0008818469323649618,
+    "D_n": 0.0283292987317191,
+    "D_p": 0.005212471194815533,
+    "sig_n": 9.446440527631433e-07,
+    "sig_p": 0.0019104590371030134,
+    "kappa_e": 0.001561100962810404,
+    "D_e": 0.0029895268760330605,
+    "R_contact": 0.01528911048306925,
+    "ocv_c0": 0.03319700011036137,
+    "ocv_c1": 0.03807380503941396,
+    "ocv_c2": 0.032783086442631476,
+    "ocv_end_lo": 0.005187603967001481,
+    "ocv_end_hi": 0.06535593470560011
+  },
+  "n_evaluations": 49,
+  "cost_start": 0.00660622783467238,
+  "cost_best": 0.0017089674096262975,
+  "ocv_monotonic": true,
+  "training_sheets": [
+    "Charge_1C",
+    "Charge_2C",
+    "Charge_3C",
+    "Charge_4C",
+    "Discharge_1C"
+  ]
+}

@@ -1,0 +1,76 @@
+{
+  "Charge_1C": {
+    "RMSE_mV": 26.76972252548963,
+    "MAE_mV": 18.501679336837476,
+    "MaxAbsError_mV": 95.59876583096782,
+    "R2": 0.9642760627418695,
+    "rest_RMSE_mV": 5.823189059487689,
+    "rest_bias_mV": -2.87312916635446,
+    "coverage_of_profile": 1.0,
+    "termination": "final time",
+    "initial_soc": 0.03388343226946686,
+    "conservation_gap_mAh": 0.010057186829559583
+  },
+  "Charge_2C": {
+    "RMSE_mV": 35.31630936371143,
+    "MAE_mV": 29.160445628468338,
+    "MaxAbsError_mV": 121.94621857746091,
+    "R2": 0.9313620756699295,
+    "rest_RMSE_mV": 15.877296555429375,
+    "rest_bias_mV": -8.608082261539439,
+    "coverage_of_profile": 1.0,
+    "termination": "final time",
+    "initial_soc": 0.022663752440045277,
+    "conservation_gap_mAh": 0.034829548347659056
+  },
+  "Charge_3C": {
+    "RMSE_mV": 34.999533723192215,
+    "MAE_mV": 29.910838209001366,
+    "MaxAbsError_mV": 129.9197735773281,
+    "R2": 0.9234926086017686,
+    "rest_RMSE_mV": 17.43099661091985,
+    "rest_bias_mV": -9.867972741087144,
+    "coverage_of_profile": 1.0,
+    "termination": "final time",
+    "initial_soc": 0.01860830388714409,
+    "conservation_gap_mAh": 0.046608525639424414
+  },
+  "Charge_4C": {
+    "RMSE_mV": 15.812211166633938,
+    "MAE_mV": 10.352476663225891,
+    "MaxAbsError_mV": 122.02255031244347,
+    "R2": 0.9806937516609983,
+    "rest_RMSE_mV": 1.6532058474888498,
+    "rest_bias_mV": 0.7369199190657787,
+    "coverage_of_profile": 1.0,
+    "termination": "final time",
+    "initial_soc": 0.023304276866151222,
+    "conservation_gap_mAh": 0.055339597834880294
+  },
+  "Discharge_1C": {
+    "RMSE_mV": 28.40460655294496,
+    "MAE_mV": 11.844630885953546,
+    "MaxAbsError_mV": 358.89659811006334,
+    "R2": 0.947071376101325,
+    "rest_RMSE_mV": 0.9690455979181642,
+    "rest_bias_mV": 0.8118185585169376,
+    "coverage_of_profile": 0.9173393604748434,
+    "termination": "event: Minimum voltage [V]",
+    "initial_soc": 0.977183244326255,
+    "conservation_gap_mAh": 0.0066690457929396985
+  },
+  "HPPC": {
+    "RMSE_mV": 55.46315983736518,
+    "MAE_mV": 38.95415795364942,
+    "MaxAbsError_mV": 417.6502126585864,
+    "R2": 0.8252974948853838,
+    "rest_RMSE_mV": 50.84816200604169,
+    "rest_bias_mV": 25.09395102975562,
+    "coverage_of_profile": 1.0,
+    "termination": "final time",
+    "initial_soc": 0.9827543274836107,
+    "conservation_gap_mAh": 0.021847585714773743,
+    "RMSE_pulses_le_10A_mV": 58.367602292120424,
+    "RMSE_pulses_gt_10A_mV": 79.93468045851135
+  }
+}
