@@ -1,0 +1,7 @@
+pybamm
+numpy
+pandas
+scipy
+matplotlib
+openpyxl
+psutil
