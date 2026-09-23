@@ -1,0 +1,28 @@
+{
+  "solver": "IDAKLUSolver",
+  "coverage_of_profile": 1.0,
+  "rest_RMSE_mV": 52.24642978355251,
+  "rest_bias_mV": 34.5008342529337,
+  "capacity_matching": {
+    "target_Ah": 2.5,
+    "eps_n": 0.5924991563758243,
+    "eps_p": 0.282805568101354,
+    "neg_diffusivity_m2_s": 2.5e-14,
+    "Q_n_before_Ah": 2.447260868469929,
+    "Q_p_before_Ah": 3.3061583839286635
+  },
+  "RMSE_mV": 60.139895140023846,
+  "MAE_mV": 43.167131880465035,
+  "MaxAbsError_mV": 276.9350838107307,
+  "R2": 0.7945929957983368,
+  "n_points_scored": 55460,
+  "solver_termination": "final time",
+  "fitted_stoichiometry_window": {
+    "x_0": 0.001456387679185872,
+    "x_100": 0.7760030630966726,
+    "y_0": 0.9471267393538139,
+    "y_100": 0.02313205526179643
+  },
+  "ocv_fit_rmse_mV": 12.581973795749661,
+  "initial_soc": 0.9819771312144543
+}
